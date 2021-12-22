@@ -1,13 +1,14 @@
 @media (max-width: 991px) {
-  .nav-end ul{
+  .nav-end ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
-.navbar{
-  padding: 27px 15px;
-  /* padding-bottom: 0; */
-}
+
+  .navbar {
+    padding: 27px 15px;
+    /* padding-bottom: 0; */
+  }
 }
 
 @media (max-width:768px) {
@@ -37,10 +38,13 @@
     padding: 0px 40px;
     text-align: center;
     align-items: center;
+    margin-bottom: 20px;
   }
+
   footer {
     padding: 0 !important;
   }
+
   .accordion .card-header {
     border-top: 1px solid #e3dada;
     border-radius: 0;
@@ -51,7 +55,7 @@
     border-bottom: 1px solid #e3dada;
   }
 
-  .accordion .card-header button {
+  /* .accordion .card-header button {
     padding: 0 15px;
     font-size: 16px;
     font-weight: 400;
@@ -60,86 +64,97 @@
     display: flex;
     gap: 8px;
     pointer-events: auto !important;
-  }
-
-  .accordion .card-header button:focus,
-  .accordion .card-header button:hover {
-    font-size: 16px;
-    padding: 0 15px;
-    font-weight: 400;
-  }
-
+  } */
   .accordion .card-body {
     padding: 0 15px;
   }
-
 }
 
-
-
-@media (max-width:576px) {
-
-
-
-
-
-
-
-}
 @media (min-width: 577px) {
   .m-title {
     font-size: 32px;
     line-height: 48px;
     font-weight: 600;
   }
+
   .m-para {
     font-size: 18px;
   }
+
   .form-subtitle {
     font-size: 32px;
     line-height: 48px;
     font-weight: 900;
   }
+
   .navbar-brand img {
     width: 123px;
   }
 
+  .accordion .card-header button,
+  .accordion .card-header button:focus,
+  .accordion .card-header button:hover {
+
+    font-weight: 500;
+  }
 }
+
 @media (min-width:768px) {
   .m-title {
     font-size: 50px;
     line-height: 75px;
     font-weight: 600;
   }
+
   .m-para {
     font-size: 20px;
     line-height: 30px;
     font-weight: 300;
   }
+
   .form-subtitle {
     font-size: 24px;
     line-height: 34px;
     font-weight: 600;
   }
+
   footer .collapse {
     display: block !important;
   }
+
   .navbar-brand img {
     width: 153px;
   }
+
   .accordion .card-header button object {
     display: none;
+  }
+  .accordion .card-header button,
+  .accordion .card-header button:focus,
+  .accordion .card-header button:hover {
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    pointer-events: none;
+  }
+  footer select,
+  footer ul li span {
+    font-size: 20px;
+    line-height: 27px;
+    /* font-weight: 500; */
+
   }
 }
 
 @media (min-width:992px) {
-  nav .navbar-nav{
+  nav .navbar-nav {
     position: absolute;
     left: 50%;
-    transform: translate(-50%,0);
-gap: 17px;
+    transform: translate(-50%, 0);
+    gap: 17px;
   }
-  .contact-form{
+
+  .contact-form {
     margin-left: 0;
   }
 }

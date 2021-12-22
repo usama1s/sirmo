@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  font-family: 'Hind', sans-serif;
 }
 
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Hind', sans-serif;
   min-width: 400px;
 }
 a, a:hover, a:active, a:visited, a:focus,
@@ -181,6 +182,7 @@ nav {
 .form-field {
   width: 100%;
   margin: 0px 0 10px 0;
+  position: relative;
 }
 
 .contact-form .row {
@@ -204,6 +206,12 @@ nav {
   filter: drop-shadow(0px 3px 4.5px rgba(0, 0, 0, 0.2));
   background-color: #ffffff;
   border: 2px solid white;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 28px;
+
+  color: #232323;
+  font-weight: 300;
 }
 
 .form-field textarea {
@@ -213,24 +221,43 @@ nav {
   filter: drop-shadow(0px 3px 4.5px rgba(0, 0, 0, 0.2));
   background-color: #ffffff;
   border: 2px solid white;
-}
-
-.form-field input::placeholder, .form-field textarea::placeholder {
   padding: 10px;
   font-size: 20px;
-  line-height: 34px;
-  color: #8d8d8d;
+  line-height: 28px;
+  color: #232323;
   font-weight: 300;
 }
 
-#form-field1 {
-  display: flex;
-  gap: 5px;
+.form-field .placeholder{
+  color: #8d8d8d;
+  background: red;
+  width: auto;
+  background: transparent;
+  font-size: 20px;
+  line-height: 28px;
+
+  padding: 10px;
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.form-field input[required]+.placeholder::after,
+.form-field textarea[required]+.placeholder::after{
+  content: '*';
+  color: red;
+  /* font-size: 12px; */
+
+}
+.form-field textarea:valid+.placeholder,
+.form-field textarea:active+.placeholder,
+.form-field textarea:focus+.placeholder,
+.form-field input:valid+.placeholder,
+.form-field input:active+.placeholder,
+.form-field input:focus+.placeholder{
+  display: none;
 }
 
-#form-field1>input::placeholder {
-  padding: 0px;
-}
 
 .contact-info {
   max-width: 390px;
@@ -259,7 +286,7 @@ nav {
   justify-content: flex-start;
   color: #ffffff;
   gap: 5px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .contact-info ul li a object {
@@ -269,11 +296,11 @@ nav {
 }
 footer select,
 footer ul li span {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 27px;
   color: #232323;
   font-weight: 300;
-  font-family: 'Hind', sans-serif;
+  /* font-family: 'Hind', sans-serif; */
 }
 
 footer select {
@@ -302,14 +329,20 @@ footer ul {
 .accordion .card-header button {
   background-color: transparent;
   border: none;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 27px;
   color: #232323;
-  font-weight: 700;
+  font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   text-decoration: none;
   box-shadow: none;
-  pointer-events: none;
+  pointer-events: auto;
+  gap: 8px;
+  text-transform: capitalize;
+  align-items: center;
+  display: flex;
+  padding: 0 15px;
 }
 
 .accordion .card-header {
