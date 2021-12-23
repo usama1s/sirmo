@@ -29,11 +29,29 @@ nav {
   display: flex;
   align-items: center;
 }
-
+.m-title {
+  font-size: 24px;
+  line-height: 35px;
+  color: #232323;
+  font-weight: 500;
+}
+.m-subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  color: #19191a;
+  font-weight: 600;
+}
+.m-para {
+  font-size: 16px;
+  line-height: 27px;
+  color: #232323;
+  font-weight: 100;
+}
 .navbar-brand {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 
 .navbar-brand img {
   width: 90px;
@@ -44,7 +62,12 @@ nav {
   margin: auto;
   padding: 20px 30px;
 }
-
+.sec-box:first-child{
+  padding-top:80px ;
+}
+.bg-light{
+  background-color: white !important;
+}
 .navbar {
   margin: auto;
   max-width: 1380px;
@@ -52,13 +75,16 @@ nav {
 }
 
 .navbar-nav .nav-item>a {
-  font-size: 20px;
+  font-size: 18px;
   color: #232323;
   font-weight: 300;
 }
-
+nav .navbar-toggler{
+  font-size: 12px;
+  font-weight: 600;
+}
 .nav-end {
-  font-size: 20px;
+  font-size: 18px;
   color: #232323;
   font-weight: 300;
   display: flex;
@@ -86,10 +112,10 @@ nav {
   min-width: 117px;
   height: 40px;
   border-radius: 20px;
-  filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+  /* filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16)); */
   background-color: #4f4ac5;
-  border: 2px solid #4f4ac5;
-  font-size: 20px;
+  /* border: 2px solid #4f4ac5; */
+  font-size: 18px;
   line-height: 30px;
   color: #ffffff !important;
   font-weight: 200;
@@ -110,27 +136,15 @@ nav {
   display: block;
   content: "";
   position: absolute;
-  top: 8px;
-  right: -6px;
+  top: 7px;
+  right: -4px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
   background-image: linear-gradient(180deg, #ff8566 0%, #804333 100%);
 }
 
-.m-title {
-  font-size: 24px;
-  line-height: 35px;
-  color: #232323;
-  font-weight: 500;
-}
 
-.m-para {
-  font-size: 16px;
-  line-height: 27px;
-  color: #232323;
-  font-weight: 100;
-}
 
 .social-icons {
   padding: 0;
@@ -145,6 +159,10 @@ nav {
 
 .social-icons li {
   margin: 13.5px;
+}
+.social-icons li:nth-child(2) img{
+  margin-bottom: 3px;
+
 }
 
 .social-icons li a {
@@ -176,12 +194,7 @@ nav {
   margin: auto;
 }
 
-.form-subtitle {
-  font-size: 16px;
-  line-height: 25px;
-  color: #19191a;
-  font-weight: 600;
-}
+
 
 .form-field {
   width: 100%;
@@ -211,10 +224,11 @@ nav {
   /* background-color: #ffffff; */
   border: 2px solid white;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   color: #232323;
   font-weight: 300;
+  resize: vertical;
 }
 
 .form-field textarea {
@@ -225,7 +239,7 @@ nav {
   /* background-color: #ffffff; */
   border: 2px solid white;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   color: #232323;
   font-weight: 300;
@@ -237,7 +251,7 @@ nav {
   background: red;
   width: auto;
   background: transparent;
-  font-size: 20px;
+  font-size: 18px;
   /* line-height: 28px; */
   height: 100%;
   padding: 10px;
@@ -250,7 +264,7 @@ nav {
   width: 100%;
   border-radius: 5px;
   z-index: -1;
-  filter: drop-shadow(0px 3px 4.5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 2px 3.0px rgba(0, 0, 0, 0.25));
 }
 .form-field  textarea+.placeholder{
   height: calc(100% - 8px);
@@ -277,7 +291,7 @@ nav {
 .form-field input:active,
 .form-field input:focus{
   background: white;
-    filter: drop-shadow(0px 3px 4.5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 2px 3.0px rgba(0, 0, 0, 0.25));
 }
 
 .contact-info {
@@ -287,7 +301,7 @@ nav {
   background-color: #ff7f4f;
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   color: #ffffff;
   font-weight: 300;
@@ -317,7 +331,7 @@ nav {
 }
 footer select,
 footer ul li span {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 27px;
   color: #232323;
   font-weight: 300;
@@ -350,7 +364,7 @@ footer ul {
 .accordion .card-header button {
   background-color: transparent;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 27px;
   color: #232323;
   font-weight: 400;
@@ -390,8 +404,14 @@ footer img {
 .footer-icons {
   display: flex;
   align-items: center;
-  
+
   gap: 18px;
+}
+/* .accordion .card:nth-child(2) ul li{
+  width: 127px;
+} */
+form .m-para{
+  color: #8d8d8d;
 }
 
 /* media queries -------------  */
@@ -403,7 +423,7 @@ footer img {
   }
 
   .navbar-collapse {
-    padding: 15px;
+        padding: 30px 15px 0 15px;
   }
 
   .footer-section {

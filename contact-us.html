@@ -11,7 +11,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +21,12 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg  ">
+  <header class="fixed-top bg-light">
+    <nav class="navbar navbar-expand-lg ">
       <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+      <button class="navbar-toggler p-0 d-flex align-items-center justify-content-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <p class="mb-0 mr-2">Menu</p>
+        <img src="assets/images/icons/hamburger.svg" alt="">
       </button>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -44,7 +44,7 @@
           </li>
 
         </ul>
-        <div class="nav-end my-2 my-lg-0">
+        <div class="nav-end my-0">
           <ul class="">
             <li>
               <a href="#">EN / NL </a>
@@ -52,11 +52,14 @@
             <li class="d-none d-lg-block">
               <span></span>
             </li>
-            <li>
+            <li class="d-none d-lg-block">
               <a href="#">Login </a>
             </li>
-            <li>
+            <li class="d-none d-lg-block">
               <a href="#" class="btn-blue">Sign up </a>
+            </li>
+            <li class="d-block d-lg-none">
+              <a href="#">Login / Register </a>
             </li>
           </ul>
 
@@ -102,13 +105,13 @@
         </a> </li>
 
     </ul>
-    <section class=" sec-box">
+    <section class=" sec-box contact-form-sec">
       <div class="row">
         <div class="col-12 col-sm-4 col-md-12">
-          <h3 class="form-subtitle text-center text-sm-right text-md-left mb-4 d-block d-sm-none d-md-block">
+          <h3 class="m-subtitle text-center text-sm-right text-md-left mb-4 d-block d-sm-none d-md-block">
             Send us a message!
           </h3>
-          <h3 class="form-subtitle text-center text-sm-right text-md-left mb-4 d-none d-sm-block d-md-none">
+          <h3 class="m-subtitle text-center text-sm-right text-md-left mb-4 d-none d-sm-block d-md-none">
             Send <br> us a <br> message!
           </h3>
         </div>
@@ -175,24 +178,24 @@
 
             </div>
             <div class=" col-lg-4 col-md-5 col-12 d-none d-md-block">
-              <div class="w-100 d-flex justify-content-center">
-                <div class="contact-info">
+              <div class="w-100 d-flex justify-content-center ">
+                <div class="contact-info ">
                   <ul>
                     <li>
-                      <a href="mailto:support@giveawayhopper.com">
+                      <a class="m-para" href="mailto:support@giveawayhopper.com">
                         <object data="assets/images/icons/mail.svg" type="image/svg+xml">
                         </object> <span> support@giveawayhopper.com</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="#" class="m-para">
                         <object data="assets/images/icons/whatsapp.svg" type="image/svg+xml">
                         </object>
                         <span> WhatsApp: +31 6 36169424</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="#" class="m-para">
                         <object class="invisible" data="assets/images/icons/whatsapp.svg" type="image/svg+xml">
                         </object>
                         <span>
@@ -213,13 +216,13 @@
           <div class="contact-info mt-5 d-block d-md-none mx-auto">
             <ul class="m-0">
               <li>
-                <a href="mailto:support@giveawayhopper.com">
+                <a class="m-para" href="mailto:support@giveawayhopper.com">
                   <object data="assets/images/icons/mail.svg" type="image/svg+xml">
                   </object> <span> support@giveawayhopper.com</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="m-para" href="#">
                   <object data="assets/images/icons/whatsapp.svg" type="image/svg+xml">
                   </object>
                   <span> WhatsApp: +31 6 36169424</span>
@@ -259,7 +262,7 @@
                 <div class="card-header" id="ft-1">
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#ftc-1" aria-expanded="true" aria-controls="ftc-1">
-                      INFORMATION <object data="assets/images/icons/arrow.svg" type="image/svg+xml">
+                      Information <object data="assets/images/icons/arrow.svg" type="image/svg+xml">
                       </object>
                     </button>
                   </h2>
@@ -281,7 +284,7 @@
                 <div class="card-header" id="ft-2">
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#ftc-2" aria-expanded="true" aria-controls="ftc-2">
-                      OUR TOOLS <object data="assets/images/icons/arrow.svg" type="image/svg+xml">
+                      Our Tools <object data="assets/images/icons/arrow.svg" type="image/svg+xml">
                       </object>
                     </button>
                   </h2>
@@ -303,7 +306,7 @@
                 <div class="card-header" id="ft-3">
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#ftc-3" aria-expanded="true" aria-controls="ftc-3">
-                      SUPPORT <object data="assets/images/icons/arrow.svg" type="image/svg+xml">
+                      Support <object data="assets/images/icons/arrow.svg" type="image/svg+xml">
                       </object>
                     </button>
                   </h2>
@@ -312,7 +315,7 @@
                 <div id="ftc-3" class="collapse" aria-labelledby="ft-3" data-parent="#accordionExample">
                   <div class="card-body">
                     <ul>
-                      <li> <a href="#"> <span>Conact</span></a> </li>
+                      <li> <a href="#"> <span>Contact</span></a> </li>
                       <li> <a href="#"> <span>KVK: 81678975</span></a> </li>
                     </ul>
                     <ul class="footer-icons">

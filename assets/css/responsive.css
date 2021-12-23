@@ -3,15 +3,29 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
+    gap: 0;
   }
 
+  .navbar-nav .nav-item{
+    border-bottom: 1px solid #dfdfdfc9;
+  }
+
+  .nav-end ul li{
+    border-bottom: 1px solid #dfdfdfc9;
+    width: 100%;
+    line-height: 44px;
+  }
   .navbar {
-    padding: 27px 15px;
+    padding: 31px 20px;
     /* padding-bottom: 0; */
   }
 }
 
 @media (max-width:768px) {
+  .sec-box:first-child {
+    padding-top: 100px;
+}
   .contact-info {
     margin-top: 50px;
     max-width: 670px;
@@ -68,24 +82,47 @@
   .accordion .card-body {
     padding: 0 15px;
   }
+  .form-field textarea:valid,
+  .form-field textarea:active,
+  .form-field textarea:focus,
+  .form-field input:valid,
+  .form-field input:active,
+  .form-field input:focus{
+
+    filter: drop-shadow(0px 2px 3.0px rgba(0, 0, 0, 0.1));
+  }
+  .form-field .placeholder{
+    filter: drop-shadow(0px 2px 3.0px rgba(0, 0, 0, 0.1));
+  }
+
 }
 
+
+@media (max-width: 577px) {
+  .form-field .placeholder {
+font-size: 16px;
+  }
+}
 @media (min-width: 577px) {
   .m-title {
     font-size: 32px;
     line-height: 48px;
     font-weight: 600;
   }
+  .m-subtitle {
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 900;
+  }
+
 
   .m-para {
     font-size: 18px;
   }
+.contact-form-sec .m-subtitle {
+  font-size: 32px;
+}
 
-  .form-subtitle {
-    font-size: 32px;
-    line-height: 48px;
-    font-weight: 900;
-  }
 
   .navbar-brand img {
     width: 123px;
@@ -101,21 +138,21 @@
 
 @media (min-width:768px) {
   .m-title {
-    font-size: 50px;
+    font-size: 32px;
     line-height: 75px;
     font-weight: 600;
   }
 
-  .m-para {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 300;
-  }
-
-  .form-subtitle {
+  .m-subtitle {
     font-size: 24px;
     line-height: 34px;
     font-weight: 600;
+  }
+
+  .m-para {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
   }
 
   footer .collapse {
@@ -134,12 +171,13 @@
   .accordion .card-header button:hover {
     padding: 0;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     pointer-events: none;
+    text-transform: uppercase !important;
   }
   footer select,
   footer ul li span {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 27px;
     /* font-weight: 500; */
 
@@ -153,8 +191,10 @@
     transform: translate(-50%, 0);
     gap: 17px;
   }
-
   .contact-form {
     margin-left: 0;
   }
+  .navbar-expand-lg .navbar-toggler {
+    display: none !important;
+}
 }
