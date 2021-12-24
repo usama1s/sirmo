@@ -67,6 +67,7 @@ nav {
 }
 .bg-light{
   background-color: white !important;
+  box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
 }
 .navbar {
   margin: auto;
@@ -200,6 +201,7 @@ nav .navbar-toggler{
   width: 100%;
   margin: 0px 0 10px 0;
   position: relative;
+  display: flex;
 }
 
 .contact-form .row {
@@ -265,9 +267,10 @@ nav .navbar-toggler{
   border-radius: 5px;
   z-index: -1;
   filter: drop-shadow(0px 2px 3.0px rgba(0, 0, 0, 0.25));
+  margin: 0;
 }
 .form-field  textarea+.placeholder{
-  height: calc(100% - 8px);
+  /* height: calc(100% - 8px); */
 }
 .form-field input[required]+.placeholder::after,
 .form-field textarea[required]+.placeholder::after{
@@ -325,8 +328,8 @@ nav .navbar-toggler{
 }
 
 .contact-info ul li a object {
-  width: 16.9px;
-  height: 12.68px;
+  width: 26.9px;
+  height: 15.68px;
   fill: #ffffff;
 }
 footer select,
@@ -342,6 +345,7 @@ footer select {
   border: none;
   cursor: pointer;
   /* width: 110px; */
+  resize:auto;
 }
 
 footer ul {
@@ -406,6 +410,14 @@ footer img {
   align-items: center;
 
   gap: 18px;
+}
+footer .accordion .card-header button span{
+  transition: transform 0.5s;
+  transform-origin: center;
+}
+footer .accordion .card-header button[aria-expanded="true"] span{
+  transform: rotate(-180deg);
+
 }
 /* .accordion .card:nth-child(2) ul li{
   width: 127px;

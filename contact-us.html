@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <header class="fixed-top bg-light">
+  <header class="stcky-top bg-light">
     <nav class="navbar navbar-expand-lg ">
       <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
       <button class="navbar-toggler p-0 d-flex align-items-center justify-content-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,6 +46,9 @@
         </ul>
         <div class="nav-end my-0">
           <ul class="">
+            <li class="d-block d-lg-none">
+              <a href="#">Login / Register </a>
+            </li>
             <li>
               <a href="#">EN / NL </a>
             </li>
@@ -56,11 +59,9 @@
               <a href="#">Login </a>
             </li>
             <li class="d-none d-lg-block">
-              <a href="#" class="btn-blue">Sign up </a>
+              <a  href="#" class="btn-blue font-weight-bold">Sign up </a>
             </li>
-            <li class="d-block d-lg-none">
-              <a href="#">Login / Register </a>
-            </li>
+
           </ul>
 
 
@@ -165,8 +166,10 @@
                 <p class="m-para text-left">
                   Your personal data will be treated carefully in accordance with our privacy policy.
                 </p>
-                <button class="btn-blue mx-auto ml-sm-0 d-block d-sm-none d-md-block ">
-                  Send
+                <button class="btn-blue mx-auto ml-sm-0 d-flex d-sm-none align-items-center justify-content-center">
+                  Send message <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="7.073" height="11.316" viewBox="0 0 7.073 11.316">
+  <path  d="M0,5.738,1.334,7.073l4.326-4.4,4.322,4.4,1.334-1.334L5.66,0Z" transform="translate(7.073) rotate(90)" fill="#fff"/>
+</svg>
                 </button>
                 <button class="btn-blue mx-auto ml-sm-0 d-none d-sm-flex d-md-none align-items-center justify-content-center">
                   Send message <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="7.073" height="11.316" viewBox="0 0 7.073 11.316">
@@ -174,6 +177,12 @@
 </svg>
 
                 </button>
+                <button class="btn-blue font-weight-bold mx-auto ml-sm-0 d-none d-md-flex align-items-center justify-content-center">
+                  Send message <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="7.073" height="11.316" viewBox="0 0 7.073 11.316">
+  <path  d="M0,5.738,1.334,7.073l4.326-4.4,4.322,4.4,1.334-1.334L5.66,0Z" transform="translate(7.073) rotate(90)" fill="#fff"/>
+</svg>
+                </button>
+
               </form>
 
             </div>
@@ -261,9 +270,11 @@
               <div class="card">
                 <div class="card-header" id="ft-1">
                   <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#ftc-1" aria-expanded="true" aria-controls="ftc-1">
-                      Information <object data="assets/images/icons/arrow.svg" type="image/svg+xml">
-                      </object>
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#ftc-1" aria-expanded="false" aria-controls="ftc-1">
+                      Information
+<span><object data="assets/images/icons/arrow.svg" type="image/svg+xml">
+</object></span>
+
                     </button>
                   </h2>
                 </div>
@@ -283,9 +294,10 @@
               <div class="card">
                 <div class="card-header" id="ft-2">
                   <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#ftc-2" aria-expanded="true" aria-controls="ftc-2">
-                      Our Tools <object data="assets/images/icons/arrow.svg" type="image/svg+xml">
-                      </object>
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#ftc-2" aria-expanded="false" aria-controls="ftc-2">
+                      Our Tools <span><object data="assets/images/icons/arrow.svg" type="image/svg+xml">
+                      </object></span>
+
                     </button>
                   </h2>
                 </div>
@@ -305,9 +317,10 @@
               <div class="card">
                 <div class="card-header" id="ft-3">
                   <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#ftc-3" aria-expanded="true" aria-controls="ftc-3">
-                      Support <object data="assets/images/icons/arrow.svg" type="image/svg+xml">
-                      </object>
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#ftc-3" aria-expanded="false" aria-controls="ftc-3">
+                      Support <span><object data="assets/images/icons/arrow.svg" type="image/svg+xml">
+                      </object></span>
+
                     </button>
                   </h2>
                 </div>
@@ -349,13 +362,16 @@
             </li>
             <li> <span>© 2021 Sirmo V.O.F - All rights reserved.</span>
             </li>
-            <object type="image/svg+xml" data="assets/images/icons/world.svg">
+            <li class="d-flex align-items-center justify-content-center">
+              <object type="image/svg+xml" data="assets/images/icons/world.svg">
 
-            </object>
-            <select name="" id="">
-              <option value=""> Netherlands</option>
-              <option value="">Other</option>
-            </select>
+              </object>
+              <select name="" id="">
+                <option value=""> Netherlands</option>
+                <option style="width:40px;" value="" selected>English</option>
+              </select>
+            </li>
+
           </ul>
         </div>
       </div>
