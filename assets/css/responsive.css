@@ -144,6 +144,7 @@ font-size: 16px;
 
     font-weight: 500;
   }
+
 }
 
 @media (min-width:768px) {
@@ -164,6 +165,11 @@ font-size: 16px;
     line-height: 30px;
     font-weight: 300;
   }
+  .btn-blue:hover,
+  .btn-blue:focus,
+  .btn-blue{
+    font-size: 18px;
+  }
 
   footer .collapse {
     display: block !important;
@@ -176,7 +182,7 @@ font-size: 16px;
   .accordion .card-header button object {
     display: none;
   }
-  
+
   .accordion .card-header button,
   .accordion .card-header button:focus,
   .accordion .card-header button:hover {
