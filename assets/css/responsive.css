@@ -4,7 +4,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    gap: 0;
+    /* gap: 0; */
+  }
+  .nav-end ul>*:not(:nth-last-of-type(1)){
+    margin-right: 0;
   }
 
   .navbar-nav .nav-item{
@@ -206,7 +209,10 @@ font-size: 16px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    gap: 17px;
+    /* gap: 17px; */
+  }
+  nav .navbar-nav>*:not(:nth-last-of-type(1)){
+    margin-right: 17px;
   }
   .contact-form {
     margin-left: 0;
