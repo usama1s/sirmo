@@ -1,6 +1,14 @@
 @media (max-width: 991px) {
-  header {
-    box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+  .nav-end{
+    margin-bottom: 15px !important;
+  }
+  .navbar-collapse{
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .navbar-collapse {
+    box-shadow: 0px 4px 1px rgb(1 41 112 / 1%);
 }
   .nav-end>ul {
     flex-direction: column;
