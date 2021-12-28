@@ -12,3 +12,8 @@ $(window).scroll(function() {
 $(function(){
     $('.selectpicker').selectpicker();
 });
+$(document).click(function (e) {
+    if($('.collapse').hasClass('show') && !$('nav').is(e.target) && $('nav').has(e.target).length === 0){
+        $('.navbar-toggler').click()
+    }
+});

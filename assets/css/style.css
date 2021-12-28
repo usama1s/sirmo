@@ -99,7 +99,7 @@ nav .navbar-toggler{
 .nav-end>*:not(:nth-last-of-type(1)){
   margin-right: 20px;
 }
-.nav-end ul{
+.nav-end>ul{
   margin: 0;
   list-style: none;
   display: flex;
@@ -107,10 +107,10 @@ nav .navbar-toggler{
   flex-direction: row;
   /* gap: 15px; */
 }
-.nav-end ul>*:not(:nth-last-of-type(1)){
+.nav-end>ul>*:not(:nth-last-of-type(1)){
   margin-right: 15px;
 }
-.nav-end ul li span{
+.line span{
   background: #232323;
   display: block;
   width: 1px;
@@ -460,12 +460,16 @@ form .m-para{
 .language{
   position: relative;
 }
+.language button{
+  padding-left: 0;
+}
 .language .dropdown-menu{
   padding:  10px;
 }
 .language .dropdown-menu li a{
   display: flex;
   align-items: center;
+  line-height: 26px;
 }
 .language .dropdown-menu img{
   height: 10px;
