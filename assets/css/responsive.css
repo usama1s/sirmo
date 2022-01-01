@@ -163,6 +163,7 @@ font-size: 16px;
     font-weight: 500;
   }
 
+
 }
 
 @media (min-width:768px) {
@@ -217,6 +218,44 @@ font-size: 16px;
     /* font-weight: 500; */
 
   }
+  .profile-banner .bg{
+    height: 233px;
+  }
+  .profile-banner .profile{
+    width: 119px;
+    height: 119px;
+    bottom: auto;
+    top: 20px;
+    transform: translateX(-50%);
+  }
+  .profile-banner .info{
+    bottom: 0;
+    top: auto;
+  }
+  .profile-banner h1{
+    /* font: normal normal medium 24px/35px Hind; */
+  }
+  .profile-banner p{
+    /* font: normal normal 300 18px/27px Hind; */
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .profile-banner{
+    margin-bottom: 0
+  }
+.title-border{
+  margin-bottom: 35px;
+}
+  .title-border span::after{
+    height:5px;
+    bottom: 10px;
+  }
+  .profile-social-list li a>span{
+    margin-right: 15px;
+  }
+  .profile-social-list li a+p{
+    padding-left: 45px;
+  }
 }
 
 @media (min-width:992px) {
@@ -234,5 +273,64 @@ font-size: 16px;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none !important;
+}
+.profile-banner .bg{
+  height: 536px;
+}
+.profile-banner .profile{
+  width: 275px;
+  height: 275px;
+  bottom: auto;
+  top: 70px;
+  transform: translateX(-50%);
+  border: 6px solid #FFFFFF;
+}
+.profile-banner .info{
+  bottom: 50px;
+  top: auto;
+}
+.profile-banner h1{
+  /* font: normal normal medium 40px/50px Hind; */
+  font-size: 40px;
+  line-height: 50px;
+}
+.profile-banner p{
+  /* font: normal normal 600 24px/36px Hind; */
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.title-border{
+  text-align: center;
+  position: static;
+  margin-bottom: 50px;
+}
+.title-border span{
+  position: relative;
+}
+.title-border span::after{
+  height:7px;
+  bottom: 0;
+}
+.profile-social-list li{
+  flex-direction: row;
+}
+.profile-social-list li a+p{
+  padding-left: 0;
+  margin-left: 20px;
+  position: relative;
+}
+.profile-social-list li a+p::before{
+  content: "-";
+  position: absolute;
+  top: 0;
+  left: -10px;
+
+}
+.profile-social-list li a>span {
+    margin-right: 10px;
+}
+.profile-social-list li a p span{
+  font-weight: 300;
 }
 }
