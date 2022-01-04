@@ -324,7 +324,7 @@ font-size: 16px;
 }
 .profile-social-list li a+p{
   padding-left: 0;
-  margin-left: 20px;
+  margin-left: 16px;
   position: relative;
 }
 .profile-social-list li a+p::before{
