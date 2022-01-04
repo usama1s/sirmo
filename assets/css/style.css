@@ -750,5 +750,5 @@ bottom: -30px;
 }
 .m-para-g-b{
   color: #a5afb8;
-  font-weight: 500;
+  font-weight: 500 !important;
 }
