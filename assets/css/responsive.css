@@ -317,7 +317,7 @@ font-size: 16px;
 }
 .title-border span::after{
   height:7px;
-  bottom: 0;
+  bottom: -8px;
 }
 .profile-social-list li{
   flex-direction: row;

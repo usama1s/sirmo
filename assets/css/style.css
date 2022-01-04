@@ -571,7 +571,7 @@ padding: 0;
 }
 
 .profile-banner .bg{
-  background-image: url('../images/bg-profile.png');
+  background-image: url('../images/bg-profile.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -642,7 +642,7 @@ display: flex;
   background: #FF7F4F;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -6px;
   /* border-bottom: 7px solid #FF7F4F; */
 }
 .expertise-list{
