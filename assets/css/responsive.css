@@ -256,6 +256,13 @@ font-size: 16px;
   .profile-social-list li a+p{
     padding-left: 45px;
   }
+  .slider .carousel-item{
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .carousel-indicators{
+  bottom: -38px;
+  }
 }
 
 @media (min-width:992px) {
