@@ -467,6 +467,7 @@ form .m-para{
 }
 .language button{
   padding-left: 0;
+  padding-right: 0;
 }
 .language .dropdown-menu{
   padding:  10px;
@@ -589,7 +590,10 @@ position: relative;
   left: 0;
   top: 0;
   backdrop-filter: blur(30px);
--webkit-backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  -moz-backdrop-filter: blur(30px);
+  -ms-backdrop-filter: blur(30px);
+  -o-backdrop-filter: blur(30px);
 }
 .profile{
   width: 164px;
@@ -743,4 +747,8 @@ bottom: -30px;
 }
 .carousel-inner{
   margin-bottom: 80px;
+}
+.m-para-g-b{
+  color: #a5afb8;
+  font-weight: 500;
 }

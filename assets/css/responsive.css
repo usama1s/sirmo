@@ -337,7 +337,8 @@ font-size: 16px;
 .profile-social-list li a>span {
     margin-right: 10px;
 }
-.profile-social-list li a p span{
-  font-weight: 300;
+.profile-social-list li a p span,
+.profile-social-list li a p{
+  font-weight: 600 !important;
 }
 }
