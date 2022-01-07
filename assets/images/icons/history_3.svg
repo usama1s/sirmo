@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="171.622" viewBox="0 0 20 171.622">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4f4ac5"/>
+      <stop offset="0.577" stop-color="#4f4ac5"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <path id="Exclusion_9" data-name="Exclusion 9" d="M9.723,171.622a2,2,0,0,1-2-2V39.524c0-.024,0-.049,0-.075a10,10,0,0,1,0-19.48V10.8a2,2,0,0,1,4,0v9.058a10,10,0,0,1,0,19.7V169.622A2,2,0,0,1,9.723,171.622ZM10,23.709a6,6,0,1,0,6,6A6.007,6.007,0,0,0,10,23.709Zm-.277-17a2,2,0,0,1-2-2V2a2,2,0,0,1,4,0V4.709A2,2,0,0,1,9.723,6.709Z" transform="translate(0 0)" opacity="0.8" fill="url(#linear-gradient)"/>
+</svg>

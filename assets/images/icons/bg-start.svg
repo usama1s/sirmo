@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="373.168" viewBox="0 0 1920 373.168">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#545454"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_1958" data-name="Group 1958" transform="translate(0 -4366.714)">
+    <path id="Path_337" data-name="Path 337" d="M0,0H1920V373.168H0Z" transform="translate(0 4366.714)" fill="#ff7f4f" opacity="0.3"/>
+    <path id="Intersection_1" data-name="Intersection 1" d="M3198.433,665.092a90.7,90.7,0,1,1,166.706,0ZM3847.7,617.776a11.5,11.5,0,1,1,11.5,11.5A11.5,11.5,0,0,1,3847.7,617.776Zm81.76-42.156A29.381,29.381,0,1,1,3958.844,605,29.38,29.38,0,0,1,3929.464,575.62Zm876.341,8.941a8.943,8.943,0,1,1,8.942,8.941A8.943,8.943,0,0,1,4805.8,584.561ZM3694.408,525.8a47.266,47.266,0,1,1,47.266,47.266A47.265,47.265,0,0,1,3694.408,525.8Zm993.87,20.44a16.607,16.607,0,1,1,16.607,16.607A16.606,16.606,0,0,1,4688.278,546.238ZM4859.46,292.021c0-.031,0-.066,0-.1h183.953v.1a91.977,91.977,0,1,1-183.954,0Zm-664.285,0v-.1h102.2v.1a51.1,51.1,0,0,1-102.2,0Z" transform="translate(-3157.25 4074.79)" opacity="0.05" fill="url(#radial-gradient)"/>
+  </g>
+</svg>
