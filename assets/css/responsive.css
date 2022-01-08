@@ -405,6 +405,13 @@ font-size: 16px;
 .about-card{
   height: 100%;
   margin-bottom: 0;
+  position: relative;
+  padding-bottom: 120px;
+}
+.about-card .info{
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 300px);
 }
   .about-sec .row{
     flex-direction: row-reverse;
