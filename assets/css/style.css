@@ -900,6 +900,10 @@ height: 34px;
 margin: 0;
 display: inline-block;
 transition: background 0.4s;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: auto;
 }
 .b-btn:hover{
   background: #4F4AC590;
