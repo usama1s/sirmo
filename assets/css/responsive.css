@@ -225,6 +225,16 @@ font-size: 16px;
     line-height: 27px;
 
   }
+  .counter .m-para{
+    font-weight: 500;
+  }
+  .counter .item p{
+    font-size: 46px;
+  }
+  .counter .item{
+    width: 37px;
+height: 52px;
+  }
 .contact-form-sec .m-subtitle {
   font-size: 32px;
 }
@@ -287,6 +297,13 @@ font-size: 16px;
   .coming-soon h2{
     font-size: 40px;
     line-height: 50px;
+  }
+  .counter .item p{
+    font-size: 58px;
+  }
+  .counter .item{
+    width: 46px;
+height: 64px;
   }
   .btn-blue:hover,
   .btn-blue:focus,
@@ -495,7 +512,11 @@ a.a_top, a.a_bottom{
 .profile-social-list li a p span{
   font-weight: 600 !important;
 }
-
+.social-logos{
+  margin-left: 0;
+  margin-right: auto;
+  transform: translateX(-15px);
+}
 }
 @media (min-width:1200px){
 .about-card{
@@ -524,5 +545,50 @@ a.a_top, a.a_bottom{
   .about-card .img img{
     /* transform-origin: top;
     transform: scale(1); */
+  }
+}
+
+
+@media (min-width:767px) and (max-width:991px){
+
+  .social-logos{
+    max-width: 190px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .social-logos img:nth-of-type(even){
+  }
+  .social-logos img:nth-of-type(odd){
+
+  }
+  .social-logos img:nth-of-type(1){
+    order: 0;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .social-logos img:nth-of-type(2){
+    order: 5;
+  margin-left: auto;
+  margin-right: 0;
+  }
+  .social-logos img:nth-of-type(3){
+    order: 3;
+  margin-left: auto;
+  margin-right: 0;
+  }
+  .social-logos img:nth-of-type(4){
+    order: 2;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .social-logos img:nth-of-type(5){
+    order: 1;
+  margin-left: auto;
+  margin-right: 0;
+  }
+  .social-logos img:nth-of-type(6){
+    order: 4;
+    margin-left: 0;
+    margin-right: auto;
   }
 }
