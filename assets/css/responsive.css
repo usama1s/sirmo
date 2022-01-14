@@ -113,6 +113,70 @@
     filter: drop-shadow(0px 2px 3.0px rgba(0, 0, 0, 0.1));
   }
 
+
+  .why-choose-item .img{
+    transform-origin: center;
+    animation:  scaleUpDown 8s infinite;
+    transform: scale(0.7);
+  }
+  @keyframes scaleUpDown {
+    0%{
+      transform: scale(0.7);
+    }
+    10%{
+      transform: scale(1);
+    }
+    15%{
+      transform: scale(1);
+    }
+    25%{
+      transform: scale(0.7);
+    }
+  }
+
+  .why-choose-item>div{
+    /* position: relative; */
+    padding-bottom: 100px;
+  }
+  .why-choose-item .info{
+    position: absolute;
+    opacity: 0;
+    animation:  fadeInOut 8s infinite;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  @keyframes fadeInOut {
+    0%{
+      opacity: 0;
+    }
+    10%{
+      opacity: 1;
+    }
+    15%{
+      opacity: 1;
+    }
+    25%{
+      opacity: 0;
+    }
+  }
+  .why-choose-item:nth-of-type(1) .img,
+  .why-choose-item:nth-child(1) .info{
+    animation-delay: 0s
+  }
+  .why-choose-item:nth-of-type(2) .img,
+  .why-choose-item:nth-child(2) .info{
+    animation-delay: 2s
+  }
+  .why-choose-item:nth-of-type(3) .img,
+  .why-choose-item:nth-child(3) .info{
+    animation-delay: 4s
+  }
+  .why-choose-item:nth-of-type(4) .img,
+  .why-choose-item:nth-child(4) .info{
+    animation-delay: 6s
+  }
+
+
 }
 
 
@@ -132,6 +196,7 @@ font-size: 16px;
 
 
 @media (min-width: 577px) {
+  .b-title,
   .m-title {
     font-size: 32px;
     line-height: 48px;
@@ -155,8 +220,17 @@ font-size: 16px;
     font-size: 24px;
     line-height: 36px;
   }
+  .why-choose-item h1{
+    font-size: 20px;
+    line-height: 27px;
+
+  }
 .contact-form-sec .m-subtitle {
   font-size: 32px;
+}
+.coming-soon h2{
+  font-size: 28px;
+  line-height: 38px;
 }
 
 
@@ -170,7 +244,10 @@ font-size: 16px;
 
     font-weight: 500;
   }
-
+  .growth-sec a{
+    width: 58px;
+    height: 58px;
+  }
 
 }
 
@@ -179,6 +256,10 @@ font-size: 16px;
     font-size: 32px;
     line-height: 75px;
     font-weight: 600;
+  }
+  .b-title{
+  font-size: 50px;
+  line-height: 75px;
   }
 
   .m-subtitle {
@@ -202,6 +283,10 @@ font-size: 16px;
   .history-item h2{
     font-size: 32px;
     line-height: 36px;
+  }
+  .coming-soon h2{
+    font-size: 40px;
+    line-height: 50px;
   }
   .btn-blue:hover,
   .btn-blue:focus,
@@ -321,7 +406,18 @@ font-size: 16px;
   transform-origin: top;
   transform: scale(1.25);
 }
-
+.why-choose-item .img{
+  width: 77px;
+  height: 77px;
+}
+.why-choose-item .img>div{
+  width: 63px;
+  height: 63px;
+}
+a.a_top, a.a_bottom{
+  width: 58px;
+  height: 58px;
+}
 }
 
 @media (min-width:992px) {
@@ -416,6 +512,7 @@ font-size: 16px;
   .about-sec .row{
     flex-direction: row-reverse;
   }
+
 }
 @media (min-width:1300px){
   .about-card .img img{
