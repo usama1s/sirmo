@@ -849,6 +849,7 @@ width: fit-content;
 display: flex;
 align-items: center;
 justify-content: center;
+height: 38px;
 }
 .o-btn:hover,
 .o-btn:focus{
@@ -1133,4 +1134,84 @@ transform: translateY(4px);
   width: 10px;
   height: 100%;
   /* background: red; */
+}
+
+.opacity-50{
+  opacity: 0.5 !important;
+}
+.word-sec .img{
+  background-image: url('../images/bg-2.png');
+  background-position: right;
+  background-size: auto 250px;
+  background-repeat: no-repeat;
+  height:200px;
+  margin-bottom: 40px;
+}
+
+
+.stars>div{
+  width: 30px;
+height: 30px;
+margin: 2px;
+  background: #01B479 0% 0% no-repeat padding-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review .stars+p span{
+  color: #959595;
+  font-weight: 100;
+}
+.about .img{
+  background-image: url('../images/bg-about.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 172px;
+}
+.reviews-list{
+  max-width: 440px;
+  margin: auto;
+}
+.review-item{
+  padding: 40px;
+}
+.review-item>div{
+  max-width: 400px;
+  width: calc(100vw - 100px) !important;
+  min-width: 300px;
+  padding: 14px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 20px #00000029;
+}
+.slick-arrow{
+  width: 30px;
+  height: 50px;
+}
+.slick-arrow img{
+  width: 100%;
+}
+.slick-arrow:before{
+  display: none;
+}
+.slick-dots{
+  bottom: 0px;
+}
+.slick-dots li button:before{
+  display: none;
+}
+.slick-dots li button{
+  background: #19191A 0% 0% no-repeat padding-box;
+opacity: 0.4;
+border-radius: 50%;
+width: 7px;
+height: 7px;
+}
+.slick-dots li.slick-active button{
+  background: #4F4AC5 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.slick-dots li{
+  width: auto;
+  height: auto;
+      margin: 0 8px;
 }
