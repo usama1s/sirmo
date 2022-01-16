@@ -1215,3 +1215,25 @@ height: 7px;
   height: auto;
       margin: 0 8px;
 }
+.gift-sec{
+  background: transparent linear-gradient(240deg, #544EDB 0%, #423DA4 100%) 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 5px;
+padding: 50px 25px 25px 25px;
+position: relative;
+max-width: 600px;
+margin: auto;
+}
+.gift-sec *{
+  font-weight: 300 !important;
+  color: #FFFFFF !important;
+}
+.gift-sec a{
+  text-decoration: underline;
+}
+.gift-sec .bg{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(calc(-50% - 23px),-50%);
+}

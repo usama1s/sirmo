@@ -144,6 +144,7 @@
     animation:  fadeInOut 8s infinite;
     left: 50%;
     transform: translate(-50%);
+    margin-top: 20px;
   }
   @keyframes fadeInOut {
     0%{
@@ -338,6 +339,12 @@ height: 64px;
     pointer-events: none;
     text-transform: uppercase !important;
   }
+  .check-ul li:not(:nth-of-type(1)){
+    padding-left: 50px;
+  }
+  .check-ul li:not(:nth-of-type(1))::before{
+    left: 15px;
+  }
   footer select,
   footer ul li span {
     font-size: 18px;
@@ -466,6 +473,19 @@ a.a_top, a.a_bottom{
   max-width: none;
 width: auto !important;
 min-width: unset;
+}
+
+.gift-sec{
+  padding: 20px;
+  }
+  .gift-sec .bg{
+    position: absolute;
+      top: auto;
+      bottom: 0;
+      right: 0;
+      left: auto;
+      transform-origin: center;
+      transform: scale(1.5) translate(8%,8%);
 }
 }
 
