@@ -600,7 +600,16 @@ min-width: unset;
   .about-sec .row{
     flex-direction: row-reverse;
   }
-
+  .footer-logo-m{
+    min-width: 326px !important;
+    max-width: 326px !important;
+  }
+  .footer-links-m{
+    min-width: 500px !important;
+  }
+  .footer-gift-m{
+max-width: 600px;
+  }
 }
 @media (min-width:1300px){
   .about-card .img img{
