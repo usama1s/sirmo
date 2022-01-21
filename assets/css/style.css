@@ -1123,14 +1123,15 @@ position: relative;
 }
 .counter .item>div{
   width: calc(100% - 4px);
-height: calc(100% - 2px);
-background: transparent linear-gradient(180deg, #FFAF9B 0%, #FF5E34 100%) 0% 0% no-repeat padding-box;
-box-shadow: 0px 3px 6px #00000029;
-border-radius: 13px;
-/* background: green; */
-display: flex;
-align-items: center;
-justify-content: center;
+  height: calc(100% - 2px);
+  background: transparent linear-gradient(180deg, #FFAF9B 0%, #FF5E34 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 13px;
+  /* background: green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .counter .item>div:after{
   content: "";
@@ -1145,11 +1146,17 @@ justify-content: center;
 .counter .item p{
   margin: 0;
   letter-spacing: 0px;
-color: #FFFFFF;
-font-size: 35px;
-line-height: 1;
-font-weight: 600;
-transform: translateY(4px);
+  color: #FFFFFF;
+  font-size: 35px;
+  line-height: 1;
+  height: 30px !important;
+  font-weight: 600;
+  transform: translateY(4px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
 }
 .counter>div>span{
   display: block;
