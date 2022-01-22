@@ -862,6 +862,12 @@ bottom: -30px;
   height: 46px;
   border-radius: 25px;
 }
+.bb-btn{
+  font-weight: 600 !important;
+  height: 46px !important;
+  border-radius: 25px !important;
+
+}
 .m-para span{
   font-weight: 500;
 }
