@@ -266,6 +266,9 @@ height: 52px;
     font-size: 58px;
     height: 49px !important;
   }
+  .banner{
+    background-image: url('../images/bg_banner_desktop.svg');
+  }
   .counter .item{
     width: 46px;
 height: 64px;
@@ -610,6 +613,7 @@ max-width: 600px;
     max-width: 190px;
     width: 100%;
     flex-direction: column;
+        margin: auto;
   }
   .social-logos img:nth-of-type(even){
   }
