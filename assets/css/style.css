@@ -887,7 +887,7 @@ bottom: -30px;
   font-weight: 600 !important;
   height: 46px !important;
   border-radius: 25px !important;
-
+  padding: 0 35px !important;
 }
 .m-para span{
   font-weight: 500;
