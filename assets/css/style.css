@@ -318,7 +318,8 @@ nav .navbar-toggler{
 }
 
 .contact-info {
-  max-width: 390px;
+  max-width: 670px;
+  width: 100%;
   /* min-height: 106px; */
   border-radius: 5px;
   background-color: #ff7f4f;
@@ -329,6 +330,7 @@ nav .navbar-toggler{
   color: #ffffff;
   font-weight: 300;
   padding: 20px;
+  margin-top: 50px;
 }
 
 .contact-info ul {
@@ -353,6 +355,9 @@ nav .navbar-toggler{
   width: 26.9px;
   height: 15.68px;
   fill: #ffffff;
+}
+footer{
+  padding: 0 !important;
 }
 footer select,
 footer ul li span {
@@ -415,20 +420,28 @@ footer ul {
 }
 
 .accordion .card-body {
-  padding: 0px;
+  padding: 0 15px;
 }
 
 .accordion .card-header {
   background-color: transparent;
-  border: none;
+    border-top: 1px solid #e3dada;
+    border-bottom: 0;
+    border-radius: 0;
+    width: 100%;
 }
-
+.accordion .footer-links-m .row>div:nth-last-of-type(1) .card-header{
+  border-bottom: 1px solid #e3dada;
+}
 .accordion .card {
   border: 0;
 }
-
+.footer-logo{
+  text-align: center;
+}
 footer img {
   margin-bottom: 10px;
+  max-width: 90px;
 }
 
 .footer-icons {
@@ -610,11 +623,16 @@ border-radius: 50%;
 overflow: hidden;
 display: flex;
 }
+
 .profile-banner .profile{
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translate(-50%,50%);
+}
+.profile-banner .profile img{
+  width: 100%;
+  height: auto;
 }
 .profile-banner h1{
   text-align: center;
@@ -792,6 +810,9 @@ bottom: -30px;
 .title-border-white span::after{
   background: #fff;
 
+  bottom: 0 !important;
+}
+.title-border span::after{
   bottom: 0 !important;
 }
 .about-sec{

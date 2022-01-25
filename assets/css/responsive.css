@@ -44,11 +44,7 @@
   .sec-box:first-child {
     padding-top: 100px;
 }
-  .contact-info {
-    margin-top: 50px;
-    max-width: 670px;
-    width: 100%;
-  }
+
 
   .card {
     padding: 0;
@@ -58,48 +54,8 @@
     padding: 10px 0px;
   }
 
-  .card-body {
-    padding: 0px;
-  }
 
-  footer img {
-    max-width: 90px;
-  }
 
-  .footer-logo {
-    padding: 0px 40px;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  footer {
-    padding: 0 !important;
-  }
-
-  .accordion .card-header {
-    border-top: 1px solid #e3dada;
-    border-radius: 0;
-    width: 100%;
-  }
-
-  .accordion .row>div:nth-last-of-type(2) .card-header {
-    border-bottom: 1px solid #e3dada;
-  }
-
-  /* .accordion .card-header button {
-    padding: 0 15px;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: capitalize;
-    align-items: center;
-    display: flex;
-    gap: 8px;
-    pointer-events: auto !important;
-  } */
-  .accordion .card-body {
-    padding: 0 15px;
-  }
   .form-field textarea:valid,
   .form-field textarea:active,
   .form-field textarea:focus,
@@ -319,11 +275,32 @@ height: 64px;
   .btn-blue{
     font-size: 18px;
   }
+  .contact-info {
+    margin-top: 0;
+    max-width: 320px;
+    width: auto;
+  }
+  footer{
+    padding: 20px 30px !important;
+  }
 
   footer .collapse {
     display: block !important;
   }
-
+  .footer-logo{
+    text-align: left;
+  }
+    footer img {
+    max-width: none;
+  }
+  .accordion .card-header {
+    padding: 10px 0px;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+.accordion .card-body{
+  padding: 0;
+}
   .navbar-brand img {
     width: 153px;
   }
