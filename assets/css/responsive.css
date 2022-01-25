@@ -231,10 +231,7 @@ height: 52px;
     line-height: 75px;
     font-weight: 600;
   }
-  .b-title{
-  font-size: 50px;
-  line-height: 75px;
-  }
+
 
   .m-subtitle {
     font-size: 24px;
@@ -462,6 +459,10 @@ a.a_top, a.a_bottom{
 }
 
 @media (min-width:992px) {
+    .b-title{
+  font-size: 50px;
+  line-height: 75px;
+  }
   nav .navbar-nav {
     position: absolute;
     left: 50%;
