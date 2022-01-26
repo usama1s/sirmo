@@ -964,10 +964,11 @@ width: auto;
 /* home page */
 .banner{
 
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
+background-position: center;
 
+background-size: auto;
+
+background-repeat: repeat;
 }
 .banner img{
   max-width: 370px;
